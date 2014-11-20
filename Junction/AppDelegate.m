@@ -27,6 +27,9 @@
 
 @end
 
+// [NSApp activateIgnoringOtherApps:YES];
+// [_window makeKeyAndOrderFront:nil];
+
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
@@ -38,7 +41,7 @@
     _statusItem.title = @"";
     
     // The image that will be shown in the menu bar, a 16x16 black png works best
-    _statusItem.image = [NSImage imageNamed:@"junction16x16"];
+    _statusItem.image = [NSImage imageNamed:@"junction_offline16x16"];
     //    _statusItem.alternateImage = [NSImage imageNamed:@"feedbin-logo-alt"];
     _statusItem.highlightMode = NO;
     
@@ -71,9 +74,11 @@
 
 - (void) socketIODidConnect:(SocketIO *)socket {
     NSLog(@"Did Connect");
+    _statusItem.image = [NSImage imageNamed:@"junction_okay16x16"];
 }
 - (void) socketIODidDisconnect:(SocketIO *)socket disconnectedWithError:(NSError *)error {
     NSLog(@"Did Disconnect");
+    _statusItem.image = [NSImage imageNamed:@"junction_offline16x16"];
 }
 
 - (void) socketIO:(SocketIO *)socket didReceiveEvent:(SocketIOPacket *)packet {
@@ -91,6 +96,7 @@
 
 - (void) socketIO:(SocketIO *)socket onError:(NSError *)error {
     NSLog(@"Error: %@", error);
+    _statusItem.image = [NSImage imageNamed:@"junction_error16x16"];
 }
 
 
