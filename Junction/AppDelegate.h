@@ -8,8 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+#import "SocketIO.h"
 
+@interface AppDelegate : NSObject <NSApplicationDelegate, SocketIODelegate, NSUserNotificationCenterDelegate>
+
+@property (strong, nonatomic) NSStatusItem *statusItem;
+@property (strong, nonatomic) SocketIO *socketIO;
 
 @end
 

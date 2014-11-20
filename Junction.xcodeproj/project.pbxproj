@@ -12,6 +12,22 @@
 		0541CF0D1A1D5BBE00B5315F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0541CF0C1A1D5BBE00B5315F /* Images.xcassets */; };
 		0541CF101A1D5BBE00B5315F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0541CF0E1A1D5BBE00B5315F /* MainMenu.xib */; };
 		0541CF1C1A1D5BBF00B5315F /* JunctionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0541CF1B1A1D5BBF00B5315F /* JunctionTests.m */; };
+		0541CF381A1D5C1C00B5315F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0541CF271A1D5C1C00B5315F /* .gitignore */; };
+		0541CF391A1D5C1C00B5315F /* .gitmodules in Resources */ = {isa = PBXBuildFile; fileRef = 0541CF281A1D5C1C00B5315F /* .gitmodules */; };
+		0541CF3A1A1D5C1C00B5315F /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 0541CF291A1D5C1C00B5315F /* CHANGELOG.md */; };
+		0541CF3B1A1D5C1C00B5315F /* CONTRIBUTORS.md in Sources */ = {isa = PBXBuildFile; fileRef = 0541CF2A1A1D5C1C00B5315F /* CONTRIBUTORS.md */; };
+		0541CF3C1A1D5C1C00B5315F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0541CF2B1A1D5C1C00B5315F /* LICENSE */; };
+		0541CF3D1A1D5C1C00B5315F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0541CF2C1A1D5C1C00B5315F /* README.md */; };
+		0541CF3E1A1D5C1C00B5315F /* SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 0541CF2E1A1D5C1C00B5315F /* SocketIO.m */; };
+		0541CF3F1A1D5C1C00B5315F /* SocketIOJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0541CF301A1D5C1C00B5315F /* SocketIOJSONSerialization.m */; };
+		0541CF401A1D5C1C00B5315F /* SocketIOPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0541CF321A1D5C1C00B5315F /* SocketIOPacket.m */; };
+		0541CF411A1D5C1C00B5315F /* SocketIOTransportWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0541CF351A1D5C1C00B5315F /* SocketIOTransportWebsocket.m */; };
+		0541CF421A1D5C1C00B5315F /* SocketIOTransportXHR.m in Sources */ = {isa = PBXBuildFile; fileRef = 0541CF371A1D5C1C00B5315F /* SocketIOTransportXHR.m */; };
+		0541CF6A1A1D5CA900B5315F /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0541CF691A1D5CA800B5315F /* SocketRocket.framework */; };
+		0541CF6D1A1D5E5300B5315F /* junction16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = 0541CF6B1A1D5E5300B5315F /* junction16x16.png */; };
+		0541CF6E1A1D5E5300B5315F /* junction16x16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0541CF6C1A1D5E5300B5315F /* junction16x16@2x.png */; };
+		0541CF721A1DAF1B00B5315F /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0541CF701A1DAF1B00B5315F /* ConfigViewController.m */; };
+		0541CF731A1DAF1B00B5315F /* ConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0541CF711A1DAF1B00B5315F /* ConfigViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +51,29 @@
 		0541CF151A1D5BBF00B5315F /* JunctionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JunctionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0541CF1A1A1D5BBF00B5315F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0541CF1B1A1D5BBF00B5315F /* JunctionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JunctionTests.m; sourceTree = "<group>"; };
+		0541CF271A1D5C1C00B5315F /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0541CF281A1D5C1C00B5315F /* .gitmodules */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitmodules; sourceTree = "<group>"; };
+		0541CF291A1D5C1C00B5315F /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		0541CF2A1A1D5C1C00B5315F /* CONTRIBUTORS.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTORS.md; sourceTree = "<group>"; };
+		0541CF2B1A1D5C1C00B5315F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0541CF2C1A1D5C1C00B5315F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0541CF2D1A1D5C1C00B5315F /* SocketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIO.h; sourceTree = "<group>"; };
+		0541CF2E1A1D5C1C00B5315F /* SocketIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIO.m; sourceTree = "<group>"; };
+		0541CF2F1A1D5C1C00B5315F /* SocketIOJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOJSONSerialization.h; sourceTree = "<group>"; };
+		0541CF301A1D5C1C00B5315F /* SocketIOJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOJSONSerialization.m; sourceTree = "<group>"; };
+		0541CF311A1D5C1C00B5315F /* SocketIOPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOPacket.h; sourceTree = "<group>"; };
+		0541CF321A1D5C1C00B5315F /* SocketIOPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOPacket.m; sourceTree = "<group>"; };
+		0541CF331A1D5C1C00B5315F /* SocketIOTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransport.h; sourceTree = "<group>"; };
+		0541CF341A1D5C1C00B5315F /* SocketIOTransportWebsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransportWebsocket.h; sourceTree = "<group>"; };
+		0541CF351A1D5C1C00B5315F /* SocketIOTransportWebsocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOTransportWebsocket.m; sourceTree = "<group>"; };
+		0541CF361A1D5C1C00B5315F /* SocketIOTransportXHR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransportXHR.h; sourceTree = "<group>"; };
+		0541CF371A1D5C1C00B5315F /* SocketIOTransportXHR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOTransportXHR.m; sourceTree = "<group>"; };
+		0541CF691A1D5CA800B5315F /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketRocket.framework; path = "../SocketRocket-0.3.1-beta2/build/Debug/SocketRocket.framework"; sourceTree = "<group>"; };
+		0541CF6B1A1D5E5300B5315F /* junction16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = junction16x16.png; sourceTree = "<group>"; };
+		0541CF6C1A1D5E5300B5315F /* junction16x16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "junction16x16@2x.png"; sourceTree = "<group>"; };
+		0541CF6F1A1DAF1B00B5315F /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
+		0541CF701A1DAF1B00B5315F /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
+		0541CF711A1DAF1B00B5315F /* ConfigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0541CF6A1A1D5CA900B5315F /* SocketRocket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,11 +116,17 @@
 		0541CF041A1D5BBE00B5315F /* Junction */ = {
 			isa = PBXGroup;
 			children = (
+				0541CF251A1D5C0E00B5315F /* Vendor */,
 				0541CF071A1D5BBE00B5315F /* AppDelegate.h */,
 				0541CF081A1D5BBE00B5315F /* AppDelegate.m */,
 				0541CF0C1A1D5BBE00B5315F /* Images.xcassets */,
 				0541CF0E1A1D5BBE00B5315F /* MainMenu.xib */,
+				0541CF6B1A1D5E5300B5315F /* junction16x16.png */,
+				0541CF6C1A1D5E5300B5315F /* junction16x16@2x.png */,
 				0541CF051A1D5BBE00B5315F /* Supporting Files */,
+				0541CF6F1A1DAF1B00B5315F /* ConfigViewController.h */,
+				0541CF701A1DAF1B00B5315F /* ConfigViewController.m */,
+				0541CF711A1DAF1B00B5315F /* ConfigViewController.xib */,
 			);
 			path = Junction;
 			sourceTree = "<group>";
@@ -109,6 +155,39 @@
 				0541CF1A1A1D5BBF00B5315F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0541CF251A1D5C0E00B5315F /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				0541CF691A1D5CA800B5315F /* SocketRocket.framework */,
+				0541CF261A1D5C1C00B5315F /* socket.IO-objc-0.5.2 */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		0541CF261A1D5C1C00B5315F /* socket.IO-objc-0.5.2 */ = {
+			isa = PBXGroup;
+			children = (
+				0541CF271A1D5C1C00B5315F /* .gitignore */,
+				0541CF281A1D5C1C00B5315F /* .gitmodules */,
+				0541CF291A1D5C1C00B5315F /* CHANGELOG.md */,
+				0541CF2A1A1D5C1C00B5315F /* CONTRIBUTORS.md */,
+				0541CF2B1A1D5C1C00B5315F /* LICENSE */,
+				0541CF2C1A1D5C1C00B5315F /* README.md */,
+				0541CF2D1A1D5C1C00B5315F /* SocketIO.h */,
+				0541CF2E1A1D5C1C00B5315F /* SocketIO.m */,
+				0541CF2F1A1D5C1C00B5315F /* SocketIOJSONSerialization.h */,
+				0541CF301A1D5C1C00B5315F /* SocketIOJSONSerialization.m */,
+				0541CF311A1D5C1C00B5315F /* SocketIOPacket.h */,
+				0541CF321A1D5C1C00B5315F /* SocketIOPacket.m */,
+				0541CF331A1D5C1C00B5315F /* SocketIOTransport.h */,
+				0541CF341A1D5C1C00B5315F /* SocketIOTransportWebsocket.h */,
+				0541CF351A1D5C1C00B5315F /* SocketIOTransportWebsocket.m */,
+				0541CF361A1D5C1C00B5315F /* SocketIOTransportXHR.h */,
+				0541CF371A1D5C1C00B5315F /* SocketIOTransportXHR.m */,
+			);
+			path = "socket.IO-objc-0.5.2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +271,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0541CF0D1A1D5BBE00B5315F /* Images.xcassets in Resources */,
+				0541CF381A1D5C1C00B5315F /* .gitignore in Resources */,
+				0541CF391A1D5C1C00B5315F /* .gitmodules in Resources */,
 				0541CF101A1D5BBE00B5315F /* MainMenu.xib in Resources */,
+				0541CF6D1A1D5E5300B5315F /* junction16x16.png in Resources */,
+				0541CF3C1A1D5C1C00B5315F /* LICENSE in Resources */,
+				0541CF731A1DAF1B00B5315F /* ConfigViewController.xib in Resources */,
+				0541CF6E1A1D5E5300B5315F /* junction16x16@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,8 +295,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0541CF3E1A1D5C1C00B5315F /* SocketIO.m in Sources */,
+				0541CF3B1A1D5C1C00B5315F /* CONTRIBUTORS.md in Sources */,
 				0541CF0B1A1D5BBE00B5315F /* main.m in Sources */,
+				0541CF3D1A1D5C1C00B5315F /* README.md in Sources */,
+				0541CF401A1D5C1C00B5315F /* SocketIOPacket.m in Sources */,
+				0541CF3A1A1D5C1C00B5315F /* CHANGELOG.md in Sources */,
+				0541CF3F1A1D5C1C00B5315F /* SocketIOJSONSerialization.m in Sources */,
+				0541CF421A1D5C1C00B5315F /* SocketIOTransportXHR.m in Sources */,
+				0541CF411A1D5C1C00B5315F /* SocketIOTransportWebsocket.m in Sources */,
 				0541CF091A1D5BBE00B5315F /* AppDelegate.m in Sources */,
+				0541CF721A1DAF1B00B5315F /* ConfigViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +420,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocketRocket-0.3.1-beta2/build/Debug",
+				);
 				INFOPLIST_FILE = Junction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -337,6 +435,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocketRocket-0.3.1-beta2/build/Debug",
+				);
 				INFOPLIST_FILE = Junction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
