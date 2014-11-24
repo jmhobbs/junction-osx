@@ -22,6 +22,7 @@
 @property (weak) IBOutlet NSTextField *apiKeyField;
 @property (weak) IBOutlet NSTextField *serverDomainField;
 @property (weak) IBOutlet NSButton *saveButton;
+@property (weak) IBOutlet NSProgressIndicator *spinner;
 
 - (IBAction)saveConfig:(id)sender;
 
@@ -45,6 +46,11 @@
     //    _statusItem.alternateImage = [NSImage imageNamed:@"feedbin-logo-alt"];
     _statusItem.highlightMode = NO;
     
+    NSMenu *menu = [[NSMenu alloc] init];
+    [menu addItemWithTitle:@"Configure" action:@selector(openConfig:) keyEquivalent:@""];
+    [menu addItemWithTitle:@"Quit" action:@selector(terminate:) keyEquivalent:@""];
+    _statusItem.menu = menu;
+    
     _socketIO = [[SocketIO alloc] initWithDelegate:self];
     
     [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];
@@ -52,6 +58,9 @@
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     _apiKey = [prefs stringForKey:kPrefsAPIKey];
     _serverDomain = [prefs stringForKey:kPrefsServerDomain];
+    
+    if( _apiKey ) { [_apiKeyField setStringValue:_apiKey]; }
+    if( _serverDomain ) { [_serverDomainField setStringValue:_serverDomain]; }
     
     if(_apiKey && _serverDomain) {
         NSLog(@"API Key and Server Domain Found!");
@@ -61,6 +70,15 @@
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     [_socketIO disconnect];
+}
+
+- (void)openConfig:(id)sender {
+    [NSApp activateIgnoringOtherApps:YES];
+    [_window makeKeyAndOrderFront:self];
+}
+
+- (void)terminate:(id)sender {
+    [[NSApplication sharedApplication] terminate:self.statusItem.menu];
 }
 
 - (void)userNotificationCenter:(NSUserNotificationCenter *)center didActivateNotification:(NSUserNotification *)notification {

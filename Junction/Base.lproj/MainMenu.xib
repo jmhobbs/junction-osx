@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
     </dependencies>
@@ -16,6 +16,7 @@
                 <outlet property="apiKeyField" destination="Q39-kr-szu" id="GT0-zi-v4O"/>
                 <outlet property="saveButton" destination="MuU-LR-FZF" id="vkF-YR-Xz0"/>
                 <outlet property="serverDomainField" destination="VU8-Is-puH" id="gPn-hX-dLs"/>
+                <outlet property="spinner" destination="fXB-CT-b0p" id="uXl-i1-x6C"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -723,13 +724,22 @@
                             <action selector="saveConfig:" target="Voe-Tx-rLC" id="BEC-Z4-iX5"/>
                         </connections>
                     </button>
+                    <progressIndicator horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="fXB-CT-b0p">
+                        <rect key="frame" x="20" y="16" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="HDe-oo-AJh"/>
+                            <constraint firstAttribute="height" constant="16" id="zv8-j6-C2f"/>
+                        </constraints>
+                    </progressIndicator>
                 </subviews>
                 <constraints>
                     <constraint firstItem="VU8-Is-puH" firstAttribute="trailing" secondItem="Q39-kr-szu" secondAttribute="trailing" id="55Z-tY-7ew"/>
                     <constraint firstItem="Q39-kr-szu" firstAttribute="top" secondItem="NVD-Ci-inp" secondAttribute="bottom" constant="8" symbolic="YES" id="B6s-gh-hOd"/>
                     <constraint firstItem="NVD-Ci-inp" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="Gxh-P0-brY"/>
                     <constraint firstItem="ccw-31-NHe" firstAttribute="leading" secondItem="VU8-Is-puH" secondAttribute="leading" id="IHh-I6-8Xd"/>
+                    <constraint firstItem="fXB-CT-b0p" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="TP4-An-R9H"/>
                     <constraint firstItem="NVD-Ci-inp" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="UUj-vI-dEu"/>
+                    <constraint firstItem="fXB-CT-b0p" firstAttribute="top" secondItem="VU8-Is-puH" secondAttribute="bottom" constant="11" id="WKn-Ld-hg4"/>
                     <constraint firstItem="Q39-kr-szu" firstAttribute="leading" secondItem="NVD-Ci-inp" secondAttribute="leading" id="X2U-eR-rf6"/>
                     <constraint firstItem="ccw-31-NHe" firstAttribute="top" secondItem="Q39-kr-szu" secondAttribute="bottom" constant="8" symbolic="YES" id="ZGo-Z9-QNz"/>
                     <constraint firstItem="VU8-Is-puH" firstAttribute="top" secondItem="ccw-31-NHe" secondAttribute="bottom" constant="8" symbolic="YES" id="oyp-Q5-Ht3"/>
