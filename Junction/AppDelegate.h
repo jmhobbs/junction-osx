@@ -7,13 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <CocoaAsyncSocket/GCDAsyncSocket.h>
 
-#import "SocketIO.h"
-
-@interface AppDelegate : NSObject <NSApplicationDelegate, SocketIODelegate, NSUserNotificationCenterDelegate>
-
-@property (strong, nonatomic) NSStatusItem *statusItem;
-@property (strong, nonatomic) SocketIO *socketIO;
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSUserNotificationCenterDelegate, GCDAsyncSocketDelegate>
 
 @end
 
