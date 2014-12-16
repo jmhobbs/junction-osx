@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SocketRocket-0.3.1-beta2/SocketRocket.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "container:Junction.xcodeproj">
    </FileRef>
    <FileRef

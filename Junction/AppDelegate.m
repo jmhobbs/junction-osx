@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "JunctionPacket.h"
 
 #define kPrefsAPIKey        @"apiKey"
 #define kPrefsServerDomain  @"serverDomain"
@@ -37,7 +38,6 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    
     // http://kmikael.com/2013/07/01/simple-menu-bar-apps-for-os-x/
     // https://github.com/nfarina/feeds/blob/master/Feeds/AppDelegate.m
     
