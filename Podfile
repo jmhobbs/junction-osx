@@ -4,7 +4,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'Junction' do
-
+  pod 'CocoaAsyncSocket'
 end
 
 target 'JunctionTests' do
