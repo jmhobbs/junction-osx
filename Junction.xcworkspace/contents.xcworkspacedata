@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:Junction.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Junction.xcodeproj">
    </FileRef>
    <FileRef
